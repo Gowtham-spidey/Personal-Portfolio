@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gowtham K | Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", Arial, sans-serif;
+    }
+
+    body {
+      background: #0f172a;
+      color: white;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #020617;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+    }
+
+    header h1 {
+      color: #38bdf8;
+    }
+
+    nav a {
+      color: #38bdf8;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+      background: linear-gradient(to right, #020617, #0f172a);
+      animation: fadeIn 2s ease;
+    }
+
+    .hero img {
+      width: 150px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+      border: 3px solid #38bdf8;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+      animation: fadeInUp 1.5s ease;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      color: #38bdf8;
+      text-align: center;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 15px;
+    }
+
+    .card {
+      background: #020617;
+      padding: 15px;
+      border-radius: 8px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .project {
+      background: #020617;
+      padding: 20px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+    }
+
+    .project span {
+      color: #38bdf8;
+      font-size: 14px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background: #38bdf8;
+      color: black;
+      text-decoration: none;
+      border-radius: 20px;
+      font-weight: bold;
+    }
+
+    .btn:hover {
+      background: white;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #020617;
+      margin-top: 40px;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+
+    @keyframes fadeInUp {
+      from {opacity: 0; transform: translateY(30px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Gowtham K</h1>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <!-- Replace profile.jpg with your image -->
+  <img src="profile.jpg" alt="Profile">
+  <h2>Aspiring Software Developer & UI/UX Designer</h2>
+  <p>B.Tech CSBS Student | Passionate about Technology</p>
+  <a href="#" class="btn">Download Resume</a>
+</section>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>
+    I am Gowtham K, currently pursuing B.Tech in Computer Science and Business Systems
+    at RMD Engineering College (3rd year). My goal is to secure a high-paying role in an
+    IT company by continuously improving my technical and design skills.
+  </p>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="grid">
+    <div class="card">Java</div>
+    <div class="card">HTML, CSS, JavaScript</div>
+    <div class="card">UI/UX Design</div>
+    <div class="card">SQL</div>
+    <div class="card">Data Structures</div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+
+  <div class="project">
+    <h3>Adaptive Plant Hydration System</h3>
+    <p>Automated irrigation system that monitors soil moisture and supplies water based on real-time data.</p>
+    <span>IoT, Sensors, Microcontroller</span>
+  </div>
+
+  <div class="project">
+    <h3>Web Development Project</h3>
+    <p>Designed modern and user-friendly web pages using frontend technologies.</p>
+    <span>HTML, CSS, JavaScript</span>
+  </div>
+
+  <div class="project">
+    <h3>UI/UX E-Commerce Design</h3>
+    <p>Created a clean and user-friendly e-commerce interface for smooth shopping experience.</p>
+    <span>Canva, Photoshop</span>
+  </div>
+
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>📞 9940356713</p>
+  <p>📧 gtgowthamk@gmail.com</p>
+  <p>📍 Chennai, India</p>
+  <p>
+    <a href="https://www.linkedin.com/in/gowtham-k-990bb232a/" target="_blank">LinkedIn</a>
+  </p>
+</section>
+
+<footer>
+  <p>© 2026 Gowtham K | Portfolio</p>
+</footer>
+
+</body>
+</html>
